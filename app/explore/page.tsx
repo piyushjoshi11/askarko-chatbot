@@ -1,6 +1,6 @@
 "use client"
 
-import { useChat } from "ai/react"
+import { useChat } from "@ai-sdk/react"
 import { useState } from "react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
@@ -17,7 +17,7 @@ export default function ExplorePage() {
   const [selectedDomain, setSelectedDomain] = useState<string | null>(null)
   const [activeTab, setActiveTab] = useState("chat")
 
-  const { messages, input, handleInputChange, handleSubmit, isLoading } = useChat({
+   const { messages, input, handleInputChange, handleSubmit, isLoading } = useChat({
     api: "/api/chat/explore",
     initialMessages: [
       {
@@ -197,7 +197,8 @@ What domain would you like to explore today?`,
                   >
                     "{query}"
                   </button>
-                ))}
+                ))
+                }
               </CardContent>
             </Card>
           </div>

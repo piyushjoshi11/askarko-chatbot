@@ -23,7 +23,6 @@ export function Learn() {
 }
 
 // app/explore/page.tsx
-import { PageHeader } from "@/components/page-header"
 
 export function Explore() {
   return (
@@ -35,7 +34,6 @@ export function Explore() {
 }
 
 // app/business-development/page.tsx
-import { Logo } from "@/components/logo"
 
 export function BusinessDevelopment() {
   return (
@@ -48,7 +46,6 @@ export function BusinessDevelopment() {
 }
 
 // app/onboard/page.tsx
-import { PageHeader } from "@/components/page-header"
 
 export function Onboard() {
   return (
