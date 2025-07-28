@@ -1,0 +1,483 @@
+[debug] [2025-07-28T10:17:41.733Z] ----------------------------------------------------------------------
+[debug] [2025-07-28T10:17:41.736Z] Command:       /nix/store/ws50yvm6vzlzf7jzz6n7xh4szddrack1-nodejs-20.19.1/bin/node /nix/store/gv0i9ndcpzjpfi2yr06402kzy90q51ki-firebase-tools-14.10.1/lib/node_modules/firebase-tools/lib/bin/firebase.js deploy --only hosting
+[debug] [2025-07-28T10:17:41.737Z] CLI Version:   14.10.1
+[debug] [2025-07-28T10:17:41.737Z] Platform:      linux
+[debug] [2025-07-28T10:17:41.737Z] Node Version:  v20.19.1
+[debug] [2025-07-28T10:17:41.737Z] Time:          Mon Jul 28 2025 10:17:41 GMT+0000 (Coordinated Universal Time)
+[debug] [2025-07-28T10:17:41.737Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-07-28T10:17:42.251Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-07-28T10:17:42.251Z] > authorizing via signed-in user (piyushjoshi1101@gmail.com)
+[debug] [2025-07-28T10:17:42.252Z] [iam] checking project ask-arko-chatbot for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-07-28T10:17:42.253Z] No OAuth tokens found
+[debug] [2025-07-28T10:17:42.254Z] No OAuth tokens found
+[debug] [2025-07-28T10:17:42.254Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-07-28T10:17:42.254Z] > authorizing via signed-in user (piyushjoshi1101@gmail.com)
+[debug] [2025-07-28T10:17:42.256Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/ask-arko-chatbot:testIamPermissions [none]
+[debug] [2025-07-28T10:17:42.256Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/ask-arko-chatbot:testIamPermissions x-goog-quota-user=projects/ask-arko-chatbot
+[debug] [2025-07-28T10:17:42.256Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ask-arko-chatbot:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-07-28T10:17:42.414Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/ask-arko-chatbot:testIamPermissions 200
+[debug] [2025-07-28T10:17:42.417Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ask-arko-chatbot:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-07-28T10:17:42.421Z] No OAuth tokens found
+[debug] [2025-07-28T10:17:42.424Z] No OAuth tokens found
+[debug] [2025-07-28T10:17:42.424Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-07-28T10:17:42.424Z] > authorizing via signed-in user (piyushjoshi1101@gmail.com)
+[debug] [2025-07-28T10:17:42.425Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/ask-arko-chatbot [none]
+[debug] [2025-07-28T10:17:42.592Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/ask-arko-chatbot 200
+[debug] [2025-07-28T10:17:42.595Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/ask-arko-chatbot {"projectId":"ask-arko-chatbot","projectNumber":"387006024761","displayName":"ask-arko-chatbot","name":"projects/ask-arko-chatbot","resources":{"hostingSite":"ask-arko-chatbot"},"state":"ACTIVE","etag":"1_76bf15c1-80af-490c-99d7-5f5bc85efcac"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+   The integration is known to work with Next.js version 12 - 15.0. You may encounter errors.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2025-07-28T10:17:53.623Z] No OAuth tokens found
+[debug] [2025-07-28T10:17:53.624Z] No OAuth tokens found
+[debug] [2025-07-28T10:17:53.624Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-07-28T10:17:53.625Z] > authorizing via signed-in user (piyushjoshi1101@gmail.com)
+[debug] [2025-07-28T10:17:53.627Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/ask-arko-chatbot/sites/ask-arko-chatbot [none]
+[debug] [2025-07-28T10:17:54.241Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/ask-arko-chatbot/sites/ask-arko-chatbot 200
+[debug] [2025-07-28T10:17:54.243Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/ask-arko-chatbot/sites/ask-arko-chatbot {"name":"projects/ask-arko-chatbot/sites/ask-arko-chatbot","defaultUrl":"https://ask-arko-chatbot.web.app","type":"DEFAULT_SITE"}
+[info]    ▲ Next.js 15.2.4
+
+[info] 
+
+[info]    Creating an optimized production build ...
+
+[info]  ✓ Compiled successfully
+
+[info]    Skipping validation of types
+   Skipping linting
+
+[info]    Collecting page data ...
+
+[info]    Generating static pages (0/10) ...
+
+[info] TypeError: e[o] is not a function
+    at Object.t [as require] (.next/server/webpack-runtime.js:1:127)
+    at JSON.parse (<anonymous>)
+Error occurred prerendering page "/_not-found". Read more: https://nextjs.org/docs/messages/prerender-error
+TypeError: e[o] is not a function
+    at Object.t [as require] (/home/user/askarko-chatbot/.next/server/webpack-runtime.js:1:127)
+    at require (/home/user/askarko-chatbot/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:133:10079)
+    at u (/home/user/askarko-chatbot/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:92:646)
+    at U (/home/user/askarko-chatbot/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:92:10492)
+    at W (/home/user/askarko-chatbot/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:92:13199)
+    at /home/user/askarko-chatbot/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:92:15489
+    at Z._fromJSON (/home/user/askarko-chatbot/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:92:15523)
+    at JSON.parse (<anonymous>)
+    at L (/home/user/askarko-chatbot/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:92:10216)
+    at N (/home/user/askarko-chatbot/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:92:9533)
+Export encountered an error on /_not-found/page: /_not-found, exiting the build.
+
+[info]  ⨯ Next.js build worker exited with code: 1 and signal: null
+
+[debug] [2025-07-28T10:18:47.407Z] Error: ENOENT: no such file or directory, open '/home/user/askarko-chatbot/.next/export-marker.json'
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-07-28T10:19:39.987Z] ----------------------------------------------------------------------
+[debug] [2025-07-28T10:19:39.990Z] Command:       /nix/store/ws50yvm6vzlzf7jzz6n7xh4szddrack1-nodejs-20.19.1/bin/node /nix/store/gv0i9ndcpzjpfi2yr06402kzy90q51ki-firebase-tools-14.10.1/lib/node_modules/firebase-tools/lib/bin/firebase.js deploy --only hosting
+[debug] [2025-07-28T10:19:39.991Z] CLI Version:   14.10.1
+[debug] [2025-07-28T10:19:39.991Z] Platform:      linux
+[debug] [2025-07-28T10:19:39.991Z] Node Version:  v20.19.1
+[debug] [2025-07-28T10:19:39.991Z] Time:          Mon Jul 28 2025 10:19:39 GMT+0000 (Coordinated Universal Time)
+[debug] [2025-07-28T10:19:39.991Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-07-28T10:19:40.506Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-07-28T10:19:40.508Z] > authorizing via signed-in user (piyushjoshi1101@gmail.com)
+[debug] [2025-07-28T10:19:40.508Z] [iam] checking project ask-arko-chatbot for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-07-28T10:19:40.510Z] No OAuth tokens found
+[debug] [2025-07-28T10:19:40.510Z] No OAuth tokens found
+[debug] [2025-07-28T10:19:40.511Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-07-28T10:19:40.511Z] > authorizing via signed-in user (piyushjoshi1101@gmail.com)
+[debug] [2025-07-28T10:19:40.513Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/ask-arko-chatbot:testIamPermissions [none]
+[debug] [2025-07-28T10:19:40.513Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/ask-arko-chatbot:testIamPermissions x-goog-quota-user=projects/ask-arko-chatbot
+[debug] [2025-07-28T10:19:40.513Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ask-arko-chatbot:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-07-28T10:19:40.679Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/ask-arko-chatbot:testIamPermissions 200
+[debug] [2025-07-28T10:19:40.681Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ask-arko-chatbot:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-07-28T10:19:40.683Z] No OAuth tokens found
+[debug] [2025-07-28T10:19:40.687Z] No OAuth tokens found
+[debug] [2025-07-28T10:19:40.687Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-07-28T10:19:40.688Z] > authorizing via signed-in user (piyushjoshi1101@gmail.com)
+[debug] [2025-07-28T10:19:40.688Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/ask-arko-chatbot [none]
+[debug] [2025-07-28T10:19:40.968Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/ask-arko-chatbot 200
+[debug] [2025-07-28T10:19:40.969Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/ask-arko-chatbot {"projectId":"ask-arko-chatbot","projectNumber":"387006024761","displayName":"ask-arko-chatbot","name":"projects/ask-arko-chatbot","resources":{"hostingSite":"ask-arko-chatbot"},"state":"ACTIVE","etag":"1_76bf15c1-80af-490c-99d7-5f5bc85efcac"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+   The integration is known to work with Next.js version 12 - 15.0. You may encounter errors.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2025-07-28T10:19:59.779Z] No OAuth tokens found
+[debug] [2025-07-28T10:19:59.781Z] No OAuth tokens found
+[debug] [2025-07-28T10:19:59.781Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-07-28T10:19:59.782Z] > authorizing via signed-in user (piyushjoshi1101@gmail.com)
+[debug] [2025-07-28T10:19:59.782Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/ask-arko-chatbot/sites/ask-arko-chatbot [none]
+[debug] [2025-07-28T10:20:00.220Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/ask-arko-chatbot/sites/ask-arko-chatbot 200
+[debug] [2025-07-28T10:20:00.222Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/ask-arko-chatbot/sites/ask-arko-chatbot {"name":"projects/ask-arko-chatbot/sites/ask-arko-chatbot","defaultUrl":"https://ask-arko-chatbot.web.app","type":"DEFAULT_SITE"}
+[info]    ▲ Next.js 15.2.4
+
+[info] 
+
+[info]    Creating an optimized production build ...
+
+[info]  ✓ Compiled successfully
+
+[info]    Skipping validation of types
+   Skipping linting
+
+[info]    Collecting page data ...
+
+[info]    Generating static pages (0/10) ...
+
+[info] TypeError: e[o] is not a function
+    at Object.t [as require] (.next/server/webpack-runtime.js:1:127)
+    at JSON.parse (<anonymous>)
+Error occurred prerendering page "/explore". Read more: https://nextjs.org/docs/messages/prerender-error
+TypeError: e[o] is not a function
+    at Object.t [as require] (/home/user/askarko-chatbot/.next/server/webpack-runtime.js:1:127)
+    at require (/home/user/askarko-chatbot/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:133:10079)
+    at u (/home/user/askarko-chatbot/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:92:646)
+    at U (/home/user/askarko-chatbot/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:92:10492)
+    at W (/home/user/askarko-chatbot/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:92:13199)
+    at /home/user/askarko-chatbot/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:92:15489
+    at Z._fromJSON (/home/user/askarko-chatbot/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:92:15523)
+    at JSON.parse (<anonymous>)
+    at L (/home/user/askarko-chatbot/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:92:10216)
+    at N (/home/user/askarko-chatbot/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:92:9533)
+Export encountered an error on /explore/page: /explore, exiting the build.
+
+[info]  ⨯ Next.js build worker exited with code: 1 and signal: null
+
+[debug] [2025-07-28T10:20:42.495Z] Error: ENOENT: no such file or directory, open '/home/user/askarko-chatbot/.next/export-marker.json'
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-07-28T10:29:48.339Z] ----------------------------------------------------------------------
+[debug] [2025-07-28T10:29:48.343Z] Command:       /nix/store/ws50yvm6vzlzf7jzz6n7xh4szddrack1-nodejs-20.19.1/bin/node /nix/store/gv0i9ndcpzjpfi2yr06402kzy90q51ki-firebase-tools-14.10.1/lib/node_modules/firebase-tools/lib/bin/firebase.js deploy --only hosting
+[debug] [2025-07-28T10:29:48.344Z] CLI Version:   14.10.1
+[debug] [2025-07-28T10:29:48.344Z] Platform:      linux
+[debug] [2025-07-28T10:29:48.345Z] Node Version:  v20.19.1
+[debug] [2025-07-28T10:29:48.345Z] Time:          Mon Jul 28 2025 10:29:48 GMT+0000 (Coordinated Universal Time)
+[debug] [2025-07-28T10:29:48.345Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-07-28T10:29:48.990Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-07-28T10:30:09.331Z] Running auto auth
+[debug] [2025-07-28T10:30:09.374Z] [iam] checking project ask-arko-chatbot for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-07-28T10:30:09.382Z] No OAuth tokens found
+[debug] [2025-07-28T10:30:09.402Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/ask-arko-chatbot:testIamPermissions [none]
+[debug] [2025-07-28T10:30:09.402Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/ask-arko-chatbot:testIamPermissions x-goog-quota-user=projects/ask-arko-chatbot
+[debug] [2025-07-28T10:30:09.403Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ask-arko-chatbot:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-07-28T10:30:09.637Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/ask-arko-chatbot:testIamPermissions 200
+[debug] [2025-07-28T10:30:09.638Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ask-arko-chatbot:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-07-28T10:30:09.641Z] No OAuth tokens found
+[debug] [2025-07-28T10:30:09.642Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/ask-arko-chatbot [none]
+[debug] [2025-07-28T10:30:10.092Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/ask-arko-chatbot 200
+[debug] [2025-07-28T10:30:10.092Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/ask-arko-chatbot {"projectId":"ask-arko-chatbot","projectNumber":"387006024761","displayName":"ask-arko-chatbot","name":"projects/ask-arko-chatbot","resources":{"hostingSite":"ask-arko-chatbot"},"state":"ACTIVE","etag":"1_76bf15c1-80af-490c-99d7-5f5bc85efcac"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+   The integration is known to work with Next.js version 12 - 15.0. You may encounter errors.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2025-07-28T10:30:31.386Z] No OAuth tokens found
+[debug] [2025-07-28T10:30:31.393Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/ask-arko-chatbot/sites/ask-arko-chatbot [none]
+[debug] [2025-07-28T10:30:32.026Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/ask-arko-chatbot/sites/ask-arko-chatbot 200
+[debug] [2025-07-28T10:30:32.032Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/ask-arko-chatbot/sites/ask-arko-chatbot {"name":"projects/ask-arko-chatbot/sites/ask-arko-chatbot","defaultUrl":"https://ask-arko-chatbot.web.app","type":"DEFAULT_SITE"}
+[info]    ▲ Next.js 15.2.4
+
+[info] 
+
+[info]    Creating an optimized production build ...
+
+[info]  ✓ Compiled successfully
+
+[info]    Skipping validation of types
+   Skipping linting
+
+[info]    Collecting page data ...
+
+[info]    Generating static pages (0/10) ...
+
+[info] TypeError: e[o] is not a function
+    at Object.t [as require] (.next/server/webpack-runtime.js:1:127)
+    at JSON.parse (<anonymous>)
+Error occurred prerendering page "/explore". Read more: https://nextjs.org/docs/messages/prerender-error
+TypeError: e[o] is not a function
+    at Object.t [as require] (/home/user/askarko-chatbot/.next/server/webpack-runtime.js:1:127)
+    at require (/home/user/askarko-chatbot/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:133:10079)
+    at u (/home/user/askarko-chatbot/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:92:646)
+    at U (/home/user/askarko-chatbot/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:92:10492)
+    at W (/home/user/askarko-chatbot/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:92:13199)
+    at /home/user/askarko-chatbot/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:92:15489
+    at Z._fromJSON (/home/user/askarko-chatbot/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:92:15523)
+    at JSON.parse (<anonymous>)
+    at L (/home/user/askarko-chatbot/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:92:10216)
+    at N (/home/user/askarko-chatbot/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:92:9533)
+Export encountered an error on /explore/page: /explore, exiting the build.
+
+[info]  ⨯ Next.js build worker exited with code: 1 and signal: null
+
+[debug] [2025-07-28T10:31:37.149Z] Error: ENOENT: no such file or directory, open '/home/user/askarko-chatbot/.next/export-marker.json'
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-07-28T10:33:47.211Z] ----------------------------------------------------------------------
+[debug] [2025-07-28T10:33:47.215Z] Command:       /nix/store/ws50yvm6vzlzf7jzz6n7xh4szddrack1-nodejs-20.19.1/bin/node /nix/store/gv0i9ndcpzjpfi2yr06402kzy90q51ki-firebase-tools-14.10.1/lib/node_modules/firebase-tools/lib/bin/firebase.js deploy --only hosting
+[debug] [2025-07-28T10:33:47.216Z] CLI Version:   14.10.1
+[debug] [2025-07-28T10:33:47.216Z] Platform:      linux
+[debug] [2025-07-28T10:33:47.217Z] Node Version:  v20.19.1
+[debug] [2025-07-28T10:33:47.217Z] Time:          Mon Jul 28 2025 10:33:47 GMT+0000 (Coordinated Universal Time)
+[debug] [2025-07-28T10:33:47.217Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-07-28T10:33:47.869Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-07-28T10:33:47.870Z] > authorizing via signed-in user (piyushjoshi1101@gmail.com)
+[debug] [2025-07-28T10:33:47.871Z] [iam] checking project ask-arko-chatbot for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-07-28T10:33:47.873Z] No OAuth tokens found
+[debug] [2025-07-28T10:33:47.874Z] No OAuth tokens found
+[debug] [2025-07-28T10:33:47.874Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-07-28T10:33:47.874Z] > authorizing via signed-in user (piyushjoshi1101@gmail.com)
+[debug] [2025-07-28T10:33:47.876Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/ask-arko-chatbot:testIamPermissions [none]
+[debug] [2025-07-28T10:33:47.876Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/ask-arko-chatbot:testIamPermissions x-goog-quota-user=projects/ask-arko-chatbot
+[debug] [2025-07-28T10:33:47.877Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ask-arko-chatbot:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-07-28T10:33:48.093Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/ask-arko-chatbot:testIamPermissions 200
+[debug] [2025-07-28T10:33:48.094Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ask-arko-chatbot:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-07-28T10:33:48.101Z] No OAuth tokens found
+[debug] [2025-07-28T10:33:48.102Z] No OAuth tokens found
+[debug] [2025-07-28T10:33:48.102Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-07-28T10:33:48.104Z] > authorizing via signed-in user (piyushjoshi1101@gmail.com)
+[debug] [2025-07-28T10:33:48.106Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/ask-arko-chatbot [none]
+[debug] [2025-07-28T10:33:48.452Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/ask-arko-chatbot 200
+[debug] [2025-07-28T10:33:48.452Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/ask-arko-chatbot {"projectId":"ask-arko-chatbot","projectNumber":"387006024761","displayName":"ask-arko-chatbot","name":"projects/ask-arko-chatbot","resources":{"hostingSite":"ask-arko-chatbot"},"state":"ACTIVE","etag":"1_76bf15c1-80af-490c-99d7-5f5bc85efcac"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+   The integration is known to work with Next.js version 12 - 15.0. You may encounter errors.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2025-07-28T10:34:10.876Z] No OAuth tokens found
+[debug] [2025-07-28T10:34:10.882Z] No OAuth tokens found
+[debug] [2025-07-28T10:34:10.884Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-07-28T10:34:10.885Z] > authorizing via signed-in user (piyushjoshi1101@gmail.com)
+[debug] [2025-07-28T10:34:10.887Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/ask-arko-chatbot/sites/ask-arko-chatbot [none]
+[debug] [2025-07-28T10:34:11.396Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/ask-arko-chatbot/sites/ask-arko-chatbot 200
+[debug] [2025-07-28T10:34:11.396Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/ask-arko-chatbot/sites/ask-arko-chatbot {"name":"projects/ask-arko-chatbot/sites/ask-arko-chatbot","defaultUrl":"https://ask-arko-chatbot.web.app","type":"DEFAULT_SITE"}
+[info]    ▲ Next.js 15.2.4
+
+[info] 
+
+[info]    Creating an optimized production build ...
+
+[info]  ✓ Compiled successfully
+
+[info]    Skipping validation of types
+
+[info]    Skipping linting
+
+[info]    Collecting page data ...
+
+[info]    Generating static pages (0/10) ...
+
+[info] TypeError: e[o] is not a function
+    at Object.t [as require] (.next/server/webpack-runtime.js:1:127)
+    at JSON.parse (<anonymous>)
+Error occurred prerendering page "/explore". Read more: https://nextjs.org/docs/messages/prerender-error
+TypeError: e[o] is not a function
+    at Object.t [as require] (/home/user/askarko-chatbot/.next/server/webpack-runtime.js:1:127)
+    at require (/home/user/askarko-chatbot/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:133:10079)
+    at u (/home/user/askarko-chatbot/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:92:646)
+    at U (/home/user/askarko-chatbot/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:92:10492)
+    at W (/home/user/askarko-chatbot/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:92:13199)
+    at /home/user/askarko-chatbot/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:92:15489
+    at Z._fromJSON (/home/user/askarko-chatbot/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:92:15523)
+    at JSON.parse (<anonymous>)
+    at L (/home/user/askarko-chatbot/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:92:10216)
+    at N (/home/user/askarko-chatbot/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:92:9533)
+Export encountered an error on /explore/page: /explore, exiting the build.
+
+[info]  ⨯ Next.js build worker exited with code: 1 and signal: null
+
+[debug] [2025-07-28T10:35:14.409Z] Error: ENOENT: no such file or directory, open '/home/user/askarko-chatbot/.next/export-marker.json'
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-07-28T10:37:43.112Z] ----------------------------------------------------------------------
+[debug] [2025-07-28T10:37:43.117Z] Command:       /nix/store/ws50yvm6vzlzf7jzz6n7xh4szddrack1-nodejs-20.19.1/bin/node /nix/store/gv0i9ndcpzjpfi2yr06402kzy90q51ki-firebase-tools-14.10.1/lib/node_modules/firebase-tools/lib/bin/firebase.js deploy --only hosting
+[debug] [2025-07-28T10:37:43.118Z] CLI Version:   14.10.1
+[debug] [2025-07-28T10:37:43.118Z] Platform:      linux
+[debug] [2025-07-28T10:37:43.119Z] Node Version:  v20.19.1
+[debug] [2025-07-28T10:37:43.119Z] Time:          Mon Jul 28 2025 10:37:43 GMT+0000 (Coordinated Universal Time)
+[debug] [2025-07-28T10:37:43.120Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-07-28T10:37:43.824Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-07-28T10:37:43.825Z] > authorizing via signed-in user (piyushjoshi1101@gmail.com)
+[debug] [2025-07-28T10:37:43.825Z] [iam] checking project ask-arko-chatbot for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-07-28T10:37:43.828Z] No OAuth tokens found
+[debug] [2025-07-28T10:37:43.828Z] No OAuth tokens found
+[debug] [2025-07-28T10:37:43.829Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-07-28T10:37:43.829Z] > authorizing via signed-in user (piyushjoshi1101@gmail.com)
+[debug] [2025-07-28T10:37:43.831Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/ask-arko-chatbot:testIamPermissions [none]
+[debug] [2025-07-28T10:37:43.831Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/ask-arko-chatbot:testIamPermissions x-goog-quota-user=projects/ask-arko-chatbot
+[debug] [2025-07-28T10:37:43.832Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ask-arko-chatbot:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-07-28T10:37:44.039Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/ask-arko-chatbot:testIamPermissions 200
+[debug] [2025-07-28T10:37:44.041Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ask-arko-chatbot:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-07-28T10:37:44.043Z] No OAuth tokens found
+[debug] [2025-07-28T10:37:44.043Z] No OAuth tokens found
+[debug] [2025-07-28T10:37:44.043Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-07-28T10:37:44.045Z] > authorizing via signed-in user (piyushjoshi1101@gmail.com)
+[debug] [2025-07-28T10:37:44.046Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/ask-arko-chatbot [none]
+[debug] [2025-07-28T10:37:44.366Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/ask-arko-chatbot 200
+[debug] [2025-07-28T10:37:44.367Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/ask-arko-chatbot {"projectId":"ask-arko-chatbot","projectNumber":"387006024761","displayName":"ask-arko-chatbot","name":"projects/ask-arko-chatbot","resources":{"hostingSite":"ask-arko-chatbot"},"state":"ACTIVE","etag":"1_76bf15c1-80af-490c-99d7-5f5bc85efcac"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+   The integration is known to work with Next.js version 12 - 15.0. You may encounter errors.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2025-07-28T10:38:01.786Z] No OAuth tokens found
+[debug] [2025-07-28T10:38:01.788Z] No OAuth tokens found
+[debug] [2025-07-28T10:38:01.789Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-07-28T10:38:01.789Z] > authorizing via signed-in user (piyushjoshi1101@gmail.com)
+[debug] [2025-07-28T10:38:01.789Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/ask-arko-chatbot/sites/ask-arko-chatbot [none]
+[debug] [2025-07-28T10:38:02.301Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/ask-arko-chatbot/sites/ask-arko-chatbot 200
+[debug] [2025-07-28T10:38:02.305Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/ask-arko-chatbot/sites/ask-arko-chatbot {"name":"projects/ask-arko-chatbot/sites/ask-arko-chatbot","defaultUrl":"https://ask-arko-chatbot.web.app","type":"DEFAULT_SITE"}
+[info]    ▲ Next.js 15.2.4
+
+
+[info]    Creating an optimized production build ...
+
+[info]  ✓ Compiled successfully
+
+[info]    Skipping validation of types
+   Skipping linting
+
+[info]    Collecting page data ...
+
+[info]    Generating static pages (0/10) ...
+
+[info] TypeError: e[o] is not a function
+    at Object.t [as require] (.next/server/webpack-runtime.js:1:127)
+    at JSON.parse (<anonymous>)
+Error occurred prerendering page "/explore". Read more: https://nextjs.org/docs/messages/prerender-error
+TypeError: e[o] is not a function
+    at Object.t [as require] (/home/user/askarko-chatbot/.next/server/webpack-runtime.js:1:127)
+    at require (/home/user/askarko-chatbot/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:133:10079)
+    at u (/home/user/askarko-chatbot/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:92:646)
+    at U (/home/user/askarko-chatbot/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:92:10492)
+    at W (/home/user/askarko-chatbot/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:92:13199)
+    at /home/user/askarko-chatbot/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:92:15489
+    at Z._fromJSON (/home/user/askarko-chatbot/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:92:15523)
+    at JSON.parse (<anonymous>)
+    at L (/home/user/askarko-chatbot/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:92:10216)
+    at N (/home/user/askarko-chatbot/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:92:9533)
+Export encountered an error on /explore/page: /explore, exiting the build.
+
+[info]  ⨯ Next.js build worker exited with code: 1 and signal: null
+
+[debug] [2025-07-28T10:39:20.654Z] Error: ENOENT: no such file or directory, open '/home/user/askarko-chatbot/.next/export-marker.json'
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-07-28T10:41:47.994Z] ----------------------------------------------------------------------
+[debug] [2025-07-28T10:41:48.002Z] Command:       /nix/store/ws50yvm6vzlzf7jzz6n7xh4szddrack1-nodejs-20.19.1/bin/node /nix/store/gv0i9ndcpzjpfi2yr06402kzy90q51ki-firebase-tools-14.10.1/lib/node_modules/firebase-tools/lib/bin/firebase.js deploy --only hosting
+[debug] [2025-07-28T10:41:48.009Z] CLI Version:   14.10.1
+[debug] [2025-07-28T10:41:48.010Z] Platform:      linux
+[debug] [2025-07-28T10:41:48.011Z] Node Version:  v20.19.1
+[debug] [2025-07-28T10:41:48.015Z] Time:          Mon Jul 28 2025 10:41:48 GMT+0000 (Coordinated Universal Time)
+[debug] [2025-07-28T10:41:48.016Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-07-28T10:41:48.939Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-07-28T10:41:48.940Z] > authorizing via signed-in user (piyushjoshi1101@gmail.com)
+[debug] [2025-07-28T10:41:48.941Z] [iam] checking project ask-arko-chatbot for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-07-28T10:41:48.943Z] No OAuth tokens found
+[debug] [2025-07-28T10:41:48.947Z] No OAuth tokens found
+[debug] [2025-07-28T10:41:48.947Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-07-28T10:41:48.947Z] > authorizing via signed-in user (piyushjoshi1101@gmail.com)
+[debug] [2025-07-28T10:41:48.949Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/ask-arko-chatbot:testIamPermissions [none]
+[debug] [2025-07-28T10:41:48.950Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/ask-arko-chatbot:testIamPermissions x-goog-quota-user=projects/ask-arko-chatbot
+[debug] [2025-07-28T10:41:48.950Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ask-arko-chatbot:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-07-28T10:41:49.188Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/ask-arko-chatbot:testIamPermissions 200
+[debug] [2025-07-28T10:41:49.190Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ask-arko-chatbot:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-07-28T10:41:49.193Z] No OAuth tokens found
+[debug] [2025-07-28T10:41:49.193Z] No OAuth tokens found
+[debug] [2025-07-28T10:41:49.194Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-07-28T10:41:49.194Z] > authorizing via signed-in user (piyushjoshi1101@gmail.com)
+[debug] [2025-07-28T10:41:49.195Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/ask-arko-chatbot [none]
+[debug] [2025-07-28T10:41:49.498Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/ask-arko-chatbot 200
+[debug] [2025-07-28T10:41:49.502Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/ask-arko-chatbot {"projectId":"ask-arko-chatbot","projectNumber":"387006024761","displayName":"ask-arko-chatbot","name":"projects/ask-arko-chatbot","resources":{"hostingSite":"ask-arko-chatbot"},"state":"ACTIVE","etag":"1_76bf15c1-80af-490c-99d7-5f5bc85efcac"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+   The integration is known to work with Next.js version 12 - 15.0. You may encounter errors.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2025-07-28T10:42:06.125Z] No OAuth tokens found
+[debug] [2025-07-28T10:42:06.130Z] No OAuth tokens found
+[debug] [2025-07-28T10:42:06.131Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-07-28T10:42:06.131Z] > authorizing via signed-in user (piyushjoshi1101@gmail.com)
+[debug] [2025-07-28T10:42:06.131Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/ask-arko-chatbot/sites/ask-arko-chatbot [none]
+[debug] [2025-07-28T10:42:06.637Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/ask-arko-chatbot/sites/ask-arko-chatbot 200
+[debug] [2025-07-28T10:42:06.637Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/ask-arko-chatbot/sites/ask-arko-chatbot {"name":"projects/ask-arko-chatbot/sites/ask-arko-chatbot","defaultUrl":"https://ask-arko-chatbot.web.app","type":"DEFAULT_SITE"}
+[info]    ▲ Next.js 15.2.4
+
+[info] 
+
+[info]    Creating an optimized production build ...
+
+[info]  ✓ Compiled successfully
+
+[info]    Skipping validation of types
+   Skipping linting
+
+[info]    Collecting page data ...
+
+[info]    Generating static pages (0/10) ...
+
+[info] TypeError: e[o] is not a function
+    at Object.t [as require] (.next/server/webpack-runtime.js:1:127)
+    at JSON.parse (<anonymous>)
+Error occurred prerendering page "/explore". Read more: https://nextjs.org/docs/messages/prerender-error
+TypeError: e[o] is not a function
+    at Object.t [as require] (/home/user/askarko-chatbot/.next/server/webpack-runtime.js:1:127)
+    at require (/home/user/askarko-chatbot/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:133:10079)
+    at u (/home/user/askarko-chatbot/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:92:646)
+    at U (/home/user/askarko-chatbot/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:92:10492)
+    at W (/home/user/askarko-chatbot/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:92:13199)
+    at /home/user/askarko-chatbot/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:92:15489
+    at Z._fromJSON (/home/user/askarko-chatbot/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:92:15523)
+    at JSON.parse (<anonymous>)
+    at L (/home/user/askarko-chatbot/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:92:10216)
+    at N (/home/user/askarko-chatbot/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:92:9533)
+Export encountered an error on /explore/page: /explore, exiting the build.
+
+[info]  ⨯ Next.js build worker exited with code: 1 and signal: null
+
+[debug] [2025-07-28T10:43:16.650Z] Error: ENOENT: no such file or directory, open '/home/user/askarko-chatbot/.next/server/middleware-manifest.json'
+[error] 
+[error] Error: An unexpected error has occurred.
