@@ -1,0 +1,460 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Euclid Circular A Font */
+@font-face {
+  font-family: "Euclid Circular A";
+  src: url("data:font/woff2;base64,") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Euclid Circular A";
+  src: url("data:font/woff2;base64,") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Fallback to system fonts with similar characteristics */
+.font-euclid {
+  font-family: "Euclid Circular A", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, sans-serif;
+}
+
+/* Dark Theme Variables */
+:root.dark {
+  --background: 220 13% 9%;
+  --foreground: 220 9% 95%;
+  --card: 220 13% 11%;
+  --card-foreground: 220 9% 95%;
+  --popover: 220 13% 11%;
+  --popover-foreground: 220 9% 95%;
+  --primary: 262 83% 58%;
+  --primary-foreground: 220 9% 95%;
+  --secondary: 220 13% 15%;
+  --secondary-foreground: 220 9% 95%;
+  --muted: 220 13% 15%;
+  --muted-foreground: 220 9% 60%;
+  --accent: 220 13% 15%;
+  --accent-foreground: 220 9% 95%;
+  --destructive: 0 62% 30%;
+  --destructive-foreground: 220 9% 95%;
+  --border: 220 13% 20%;
+  --input: 220 13% 20%;
+  --ring: 262 83% 58%;
+  --radius: 0.5rem;
+
+  /* Navigation specific */
+  --nav: 220 13% 11%;
+  --nav-border: 220 13% 20%;
+  --nav-foreground: 220 9% 60%;
+  --nav-foreground-hover: 220 9% 95%;
+  --nav-hover: 220 13% 15%;
+
+  /* Tooltip */
+  --tooltip: 220 13% 15%;
+  --tooltip-foreground: 220 9% 95%;
+  --tooltip-border: 220 13% 25%;
+}
+
+/* Light Theme Variables */
+:root.light {
+  --background: 0 0% 100%;
+  --foreground: 222.2 84% 4.9%;
+  --card: 0 0% 100%;
+  --card-foreground: 222.2 84% 4.9%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 222.2 84% 4.9%;
+  --primary: 262 83% 58%;
+  --primary-foreground: 210 40% 98%;
+  --secondary: 210 40% 96%;
+  --secondary-foreground: 222.2 84% 4.9%;
+  --muted: 210 40% 96%;
+  --muted-foreground: 215.4 16.3% 46.9%;
+  --accent: 210 40% 96%;
+  --accent-foreground: 222.2 84% 4.9%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 210 40% 98%;
+  --border: 214.3 31.8% 91.4%;
+  --input: 214.3 31.8% 91.4%;
+  --ring: 262 83% 58%;
+  --radius: 0.5rem;
+
+  /* Navigation specific */
+  --nav: 0 0% 98%;
+  --nav-border: 214.3 31.8% 91.4%;
+  --nav-foreground: 215.4 16.3% 46.9%;
+  --nav-foreground-hover: 222.2 84% 4.9%;
+  --nav-hover: 210 40% 96%;
+
+  /* Tooltip */
+  --tooltip: 222.2 84% 4.9%;
+  --tooltip-foreground: 210 40% 98%;
+  --tooltip-border: 217.2 32.6% 17.5%;
+}
+
+/* Default to dark theme */
+:root {
+  --background: 220 13% 9%;
+  --foreground: 220 9% 95%;
+  --card: 220 13% 11%;
+  --card-foreground: 220 9% 95%;
+  --popover: 220 13% 11%;
+  --popover-foreground: 220 9% 95%;
+  --primary: 262 83% 58%;
+  --primary-foreground: 220 9% 95%;
+  --secondary: 220 13% 15%;
+  --secondary-foreground: 220 9% 95%;
+  --muted: 220 13% 15%;
+  --muted-foreground: 220 9% 60%;
+  --accent: 220 13% 15%;
+  --accent-foreground: 220 9% 95%;
+  --destructive: 0 62% 30%;
+  --destructive-foreground: 220 9% 95%;
+  --border: 220 13% 20%;
+  --input: 220 13% 20%;
+  --ring: 262 83% 58%;
+  --radius: 0.5rem;
+
+  /* Navigation specific */
+  --nav: 220 13% 11%;
+  --nav-border: 220 13% 20%;
+  --nav-foreground: 220 9% 60%;
+  --nav-foreground-hover: 220 9% 95%;
+  --nav-hover: 220 13% 15%;
+
+  /* Tooltip */
+  --tooltip: 220 13% 15%;
+  --tooltip-foreground: 220 9% 95%;
+  --tooltip-border: 220 13% 25%;
+}
+
+* {
+  border-color: hsl(var(--border));
+}
+
+body {
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+  font-family: "Euclid Circular A", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, sans-serif;
+  font-weight: 400;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Typography - Only Normal and Bold */
+.font-normal {
+  font-weight: 400;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+/* Remove all other font weight classes */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  font-family: inherit;
+  color: hsl(var(--foreground));
+}
+
+p,
+span,
+div {
+  font-weight: 400;
+  font-family: inherit;
+}
+
+/* Gradient text utilities */
+.gradient-text-cyan {
+  background: linear-gradient(135deg, #06b6d4, #0891b2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-text-purple {
+  background: linear-gradient(135deg, #8b5cf6, #7c3aed);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-text-primary {
+  background: linear-gradient(135deg, #06b6d4, #8b5cf6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Enhanced button styles with theme support */
+.btn-primary {
+  background: linear-gradient(135deg, #8b5cf6, #7c3aed);
+  border: none;
+  color: white;
+  transition: all 0.3s ease;
+  border-radius: 1rem;
+  font-weight: 700;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #7c3aed, #6d28d9);
+  transform: translateY(-2px);
+  box-shadow: 0 20px 25px -5px rgba(139, 92, 246, 0.3), 0 10px 10px -5px rgba(139, 92, 246, 0.1);
+}
+
+.btn-secondary {
+  background: hsl(var(--secondary));
+  border: 1px solid hsl(var(--border));
+  color: hsl(var(--foreground));
+  transition: all 0.3s ease;
+  border-radius: 0.75rem;
+  font-weight: 400;
+}
+
+.btn-secondary:hover {
+  background: hsl(var(--accent));
+  border-color: hsl(var(--ring));
+  transform: translateY(-1px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+/* Light mode button adjustments */
+:root.light .btn-secondary:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+/* Enhanced card styles with theme support */
+.card-dark {
+  background: hsl(var(--card));
+  border: 1px solid hsl(var(--border));
+  border-radius: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.card-dark:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+/* Light mode card adjustments */
+:root.light .card-dark:hover {
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.1);
+}
+
+/* Enhanced hover effects */
+.hover-lift:hover {
+  transform: translateY(-3px);
+}
+
+/* Typography enhancements - Simplified */
+.text-large {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.1;
+  color: hsl(var(--foreground));
+}
+
+.text-subtitle {
+  font-size: 1.125rem;
+  color: hsl(var(--muted-foreground));
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+/* Custom scrollbar with theme support */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(var(--secondary));
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #8b5cf6, #06b6d4);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #7c3aed, #0891b2);
+}
+
+/* Focus styles with curves */
+.focus-ring {
+  @apply focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2;
+  border-radius: 0.75rem;
+}
+
+/* Light mode focus ring offset */
+:root.light .focus-ring {
+  @apply focus:ring-offset-white;
+}
+
+/* Dark mode focus ring offset */
+:root.dark .focus-ring {
+  @apply focus:ring-offset-gray-900;
+}
+
+/* Magic vessel animations */
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Enhanced bounce for vessel */
+.animate-bounce {
+  animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+
+/* Backdrop blur support */
+.backdrop-blur-sm {
+  backdrop-filter: blur(4px);
+}
+
+/* Enhanced gradients */
+.bg-gradient-primary {
+  background: linear-gradient(135deg, #8b5cf6, #06b6d4);
+}
+
+.bg-gradient-secondary {
+  background: linear-gradient(135deg, hsl(var(--secondary)), hsl(var(--muted)));
+}
+
+/* Theme-aware text colors */
+.text-theme-primary {
+  color: hsl(var(--foreground));
+}
+
+.text-theme-secondary {
+  color: hsl(var(--muted-foreground));
+}
+
+.text-theme-accent {
+  color: hsl(var(--accent-foreground));
+}
+
+/* Navigation theme colors */
+.bg-nav {
+  background-color: hsl(var(--nav));
+}
+
+.border-nav-border {
+  border-color: hsl(var(--nav-border));
+}
+
+.text-nav-foreground {
+  color: hsl(var(--nav-foreground));
+}
+
+.text-nav-foreground-hover {
+  color: hsl(var(--nav-foreground-hover));
+}
+
+.bg-nav-hover {
+  background-color: hsl(var(--nav-hover));
+}
+
+/* Tooltip theme colors */
+.bg-tooltip {
+  background-color: hsl(var(--tooltip));
+}
+
+.text-tooltip-foreground {
+  color: hsl(var(--tooltip-foreground));
+}
+
+.border-tooltip-border {
+  border-color: hsl(var(--tooltip-border));
+}
+
+/* Smooth transitions for all interactive elements */
+* {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow,
+    transform, filter, backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+/* Theme transition for body */
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Light mode specific adjustments */
+:root.light {
+  /* Ensure proper contrast in light mode */
+}
+
+:root.light .gradient-text-primary {
+  background: linear-gradient(135deg, #0891b2, #7c3aed);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Dark mode specific adjustments */
+:root.dark {
+  /* Keep existing dark mode styles */
+}
+
+/* Theme-aware component styles */
+.theme-card {
+  background: hsl(var(--card));
+  border: 1px solid hsl(var(--border));
+  color: hsl(var(--card-foreground));
+}
+
+.theme-input {
+  background: hsl(var(--input));
+  border: 1px solid hsl(var(--border));
+  color: hsl(var(--foreground));
+}
+
+.theme-input::placeholder {
+  color: hsl(var(--muted-foreground));
+}
+
+/* Ensure proper contrast for interactive elements */
+.theme-button {
+  background: hsl(var(--secondary));
+  color: hsl(var(--secondary-foreground));
+  border: 1px solid hsl(var(--border));
+}
+
+.theme-button:hover {
+  background: hsl(var(--accent));
+  color: hsl(var(--accent-foreground));
+}
